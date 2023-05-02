@@ -9,14 +9,16 @@ This application affords the users an app platform to enter inputs (via inquirer
 ## Table of Contents:
 - [Overview](#Overview)
 - [The Challenge](#The-Challenge)
-- [Usage Information](#Usage-Information)
+- [User Story](#user-story)
+- [User Instruction](#usage-instruction)
 - [Installation Process](#Installation-Process)
 - [Built With](#Built-With)
-- [What I Learned](#What-I-Learned)
+- [Linkt to work](#Link-to-work)
 - [Continued Development](#Continued-Development)
 - [License](#License)
+- [Copyright](#copyright)
 - [Author](#Author)
-- [Acknowledgments](#Acknowledgments)
+
 
 # Overview
 
