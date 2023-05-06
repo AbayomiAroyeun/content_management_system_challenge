@@ -3,26 +3,26 @@ CREATE DATABASE resources_db;
 
 USE resources_db;
 
-CREATE TABLE departments(
-department_id INT AUTO_INCREMENT PRIMARY KEY,
-department_name VARCHAR(30)
+CREATE TABLE department(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30)
 );
 
 
-CREATE TABLE roles(
-roles_id INT AUTO_INCREMENT PRIMARY KEY,
-roles_role VARCHAR(30),
+CREATE TABLE role(
+id INT AUTO_INCREMENT PRIMARY KEY,
+role VARCHAR(30),
 salary DECIMAL,
 department_id INT,
-FOREIGN KEY(department_id) REFERENCES departments(department_id)
+FOREIGN KEY(department_id) REFERENCES department(id)
 );
 
-CREATE TABLE employees(
-employees_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE employee(
+id INT AUTO_INCREMENT PRIMARY KEY,
 first_name  VARCHAR(30),
 last_name  VARCHAR(30),
 role_id INT,
-FOREIGN KEY(role_id) REFERENCES roles(roles_id),
+FOREIGN KEY(role_id) REFERENCES role(id),
 manager_id INT,
-FOREIGN KEY (manager_id) REFERENCES employees(employees_id) 
+FOREIGN KEY (manager_id) REFERENCES employee(id) 
 );
